@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 /// - When this widget is given infinite vertical space, it should fit its height to the size of its content.
 /// - When this widget is given too little space, such that its contents take up more vertical space than it
 ///   is given, it should clip its children rather than overflow.
-/// - The `ColoredBox` must not be removed
+/// - The `ColoredBox` must not be removed, but may be moved if necessary
 /// - The children of the `Column` must not be changed
 /// - There must be 16 logical pixels of padding between the edge of the box and the text
 /// - The text must remain left-aligned
