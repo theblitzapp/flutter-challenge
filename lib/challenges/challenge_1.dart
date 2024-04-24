@@ -1,18 +1,18 @@
-// This widget has an issue. As it changes in height, it takes up the complete available vertical space.
-// However, this is not what we want. This widget should only take up as much vertical space as its column
-// needs, and should not overflow its container when the size is too small.
-//
-// Requiremements:
-// - When this widget is given infinite vertical space, it should fit its height to the size of its content.
-// - When this widget is given too little space, such that its contents take up more vertical space than it
-//   is given, it should clip its children rather than overflow.
-// - The `ColoredBox` must not be removed
-// - The children of the `Column` must not be changed
-// - There must be 16 logical pixels of padding between the edge of the box and the text
-// - The text must remain left-aligned
-// - The width must not be changed
 import 'package:flutter/material.dart';
 
+/// This widget has an issue. As it changes in height, it takes up the complete available vertical space.
+/// However, this is not what we want. This widget should only take up as much vertical space as its column
+/// needs, and should not overflow its container when the size is too small.
+///
+/// Requiremements:
+/// - When this widget is given infinite vertical space, it should fit its height to the size of its content.
+/// - When this widget is given too little space, such that its contents take up more vertical space than it
+///   is given, it should clip its children rather than overflow.
+/// - The `ColoredBox` must not be removed
+/// - The children of the `Column` must not be changed
+/// - There must be 16 logical pixels of padding between the edge of the box and the text
+/// - The text must remain left-aligned
+/// - The width must not be changed
 class Challenge1Widget extends StatelessWidget {
   const Challenge1Widget({super.key});
 
